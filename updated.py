@@ -99,7 +99,7 @@ def main():
 
     # Get list of CSV files
     all_files = sorted([f for f in os.listdir(folder_path) if f.endswith('.csv')])
-    print(f"📦 Total CSV files found: {len(all_files)}")
+    print(f" Total CSV files found: {len(all_files)}")
 
     # Process up to 2500 frames
     for i, filename in enumerate(all_files):
@@ -108,7 +108,7 @@ def main():
             break
 
         file_path = os.path.join(folder_path, filename)
-        print(f"🔄 Processing Frame {i}: {filename}")
+        print(f" Processing Frame {i}: {filename}")
 
         try:
             points = read_csv(file_path)
